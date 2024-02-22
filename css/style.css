@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    flex: 1 0 auto; /* This will make the main content grow and shrink as needed, not allowing it to shrink past content size */
+}
+footer {
+    flex-shrink: 0; /* This will prevent the footer from shrinking. It helps in cases where the footer content is bigger than its container */
+}
+
